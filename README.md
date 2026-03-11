@@ -27,7 +27,7 @@ el flujo de caja, exponiendo endpoints listos para ser consumidos por cualquier 
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/tu-usuario/sistema-supermercado.git](https://github.com/tu-usuario/sistema-supermercado.git)
+   git clone https://github.com/mariodufour/supermercado-spring-boot.git
 
    **Navegar al directorio del proyecto:**
    cd sistema-supermercado
