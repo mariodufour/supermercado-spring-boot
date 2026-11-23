@@ -22,29 +22,6 @@ el flujo de caja, exponiendo endpoints listos para ser consumidos por cualquier 
 ### Requisitos Previos
 * Tener instalado JDK 25.
 * Git instalado en tu equipo.
-
-## 🐳 Ejecutar con Docker y Docker Compose
-
-Este proyecto incluye configuración con Docker para levantar la API de Spring Boot junto con una base de datos **MySQL 8.0** de forma aislada.
-
-### Requisitos previos
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (o Docker Engine + Docker Compose) instalado y en ejecución.
-
-### Pasos para levantar el entorno
-1. Cloná el repositorio:
-   ```bash
-   git clone <URL-DE-TU-REPOSITORIO>
-   cd <NOMBRE-DE-LA-CARPETA>
-
-   2. Construí las imágenes y levantá los servicios en segundo plano:
-   docker compose up -d --build
-
-   3. Verificá los logs de la API hasta ver que haya iniciado correctamente:
-   docker compose logs -f api
-   La API quedará disponible en http://localhost:8080.
-
-   Detener los contenedores
-   docker compose down
    
 ### Pasos para ejecutar
 
@@ -94,3 +71,26 @@ Este proyecto incluye configuración con Docker para levantar la API de Spring B
    Services: Contienen toda la lógica de negocio y actúan como intermediarios.
    Repositories: Interfaces de Spring Data JPA para la persistencia de datos.
    DTOs (Data Transfer Objects): Utilizados para transferir datos entre el cliente y el servidor de forma segura, ocultando las entidades internas.**
+
+   ## 🐳 Ejecutar con Docker y Docker Compose
+
+Este proyecto incluye configuración con Docker para levantar la API de Spring Boot junto con una base de datos **MySQL 8.0** de forma aislada.
+
+### Requisitos previos
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (o Docker Engine + Docker Compose) instalado y en ejecución.
+
+### Pasos para levantar el entorno
+1. Cloná el repositorio:
+   ```bash
+   git clone <URL-DE-TU-REPOSITORIO>
+   cd <NOMBRE-DE-LA-CARPETA>
+
+   2. Construí las imágenes y levantá los servicios en segundo plano:
+   docker compose up -d --build
+
+   3. Verificá los logs de la API hasta ver que haya iniciado correctamente:
+   docker compose logs -f api
+   La API quedará disponible en http://localhost:8080.
+
+   Detener los contenedores
+   docker compose down
