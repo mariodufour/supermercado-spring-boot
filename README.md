@@ -72,7 +72,7 @@ el flujo de caja, exponiendo endpoints listos para ser consumidos por cualquier 
    Repositories: Interfaces de Spring Data JPA para la persistencia de datos.
    DTOs (Data Transfer Objects): Utilizados para transferir datos entre el cliente y el servidor de forma segura, ocultando las entidades internas.**
 
-   ## 🐳 Ejecutar con Docker y Docker Compose
+## 🐳 Ejecutar con Docker y Docker Compose
 
 Este proyecto incluye configuración con Docker para levantar la API de Spring Boot junto con una base de datos **MySQL 8.0** de forma aislada.
 
